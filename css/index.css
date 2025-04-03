@@ -1,0 +1,164 @@
+.container {
+    width: 950px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.box:last-child {
+    border-bottom: 0;
+}
+
+.container .box a {
+    display: flex;
+    width: 280px;
+    height: 210px;
+    align-items: center;
+}
+
+.container .box a .aBox {
+    width: 280px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.container .box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+
+.container .box a img:hover {
+    transform: scale(1.2);
+}
+
+.container .box .right {
+    margin-left: 20px;
+}
+
+.container .box .right h2 {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.container .box .right h2:hover {
+    color: green;
+}
+
+.container .box .right span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #858489;
+}
+
+.container .box .right p {
+    font-size: 14px;
+    color: #616161;
+}
+
+.pagination {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.pagination a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .3s;
+    margin: 0 4px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.pagination a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.pagination a:nth-child(1):hover {
+    background-color: #00965e;
+}
+
+.pagination a:nth-child(13):hover {
+    background-color: blue;
+}
+
+.active {
+    background-color: #006aed !important;
+}
+
+.alert {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 18px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    display: none;
+}
+
+.alert-success {
+    background-color: #66b1ff;
+    border: 1px solid #66b1ff;
+    display: block;
+}
+
+.alert-danger {
+    background-color: red;
+    border: 1px solid rgba(255, 0, 0, .6);
+    display: block;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .tag {
+    background-color: #ffffff;  /* 中等粉色 */
+    border: 1px solid rgb(255, 31, 98);  /* 深粉色边框 */
+    color: #ffffff;  /* 白色文字 */
+    padding: 6px 16px;  /* 增大内边距 */
+    border-radius: 8px;  /* 更圆润的角 */
+    font-size: 1em;  /* 稍大的字体 */
+    white-space: nowrap;
+    font-weight: 600;  /* 加粗 */
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    transform: scale(1.1);  /* 轻微放大效果 */
+    cursor: pointer;
+  }
+
+  
